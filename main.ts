@@ -36,11 +36,12 @@ function AddLog (ID: string) {
     }
     contact_ID.push(ID)
     contact_time.push(input.runningTime())
+    start_bonus_time = input.runningTime()
 }
 function BonusScore () {
-    if (input.runningTime() - last_time_bonus >= bonus_time) {
+    if (input.runningTime() - start_bonus_time >= bonus_time) {
         score += 1
-        last_time_bonus = input.runningTime()
+        start_bonus_time = input.runningTime()
         basic.showLeds(`
             . . # . .
             . # # # .
@@ -75,7 +76,7 @@ function Initialize () {
     contact_ID = []
     contact_time = []
     alert_level = 0
-    last_time_bonus = input.runningTime()
+    start_bonus_time = input.runningTime()
     receive_start_time = 0
     receive_last_time = 0
 }
@@ -149,7 +150,7 @@ let receive_start_time = 0
 let alert_level = 0
 let score = 0
 let bonus_time = 0
-let last_time_bonus = 0
+let start_bonus_time = 0
 let dummy_int = 0
 let dummy_string = ""
 let contact_time: number[] = []
