@@ -69,7 +69,7 @@ function DisplayScore () {
 function Initialize () {
     score = 10
     bonus_time = 3600000
-    music.setVolume(95)
+    music.setVolume(128)
     radio.setGroup(19)
     radio.setTransmitPower(0)
     contact_ID = []
