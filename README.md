@@ -1,6 +1,4 @@
 
-> Open this page at [https://asondemita.github.io/contact-warning-and-tracing/](https://asondemita.github.io/contact-warning-and-tracing/)
-
 ## How to run the program
 
 This repository can be read in MakeCode.
